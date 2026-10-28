@@ -471,6 +471,65 @@ header {
   border-radius: 100px;
 }
 
+/* Om mig - stilar sektionen */
+
+.style-info-section {
+  background-color: #d4cfc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.style-info-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.style-info-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+
+  & h2 {
+  }
+}
+
+.style-info-text {
+}
+
+.style-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.info-book-button {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 14px 40px;
+}
+
+.style-info-img {
+  flex: 1;
+}
+
+.style-info-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 /* footer */
 footer {
   background-color: #d4cfc4;
