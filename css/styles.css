@@ -472,14 +472,13 @@ header {
 }
 
 /* Om mig - stilar sektionen */
-
 .style-info-section {
   background-color: #d4cfc4;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 60px 40px;
+  padding: 60px 0px;
   box-sizing: border-box;
 }
 
@@ -487,7 +486,7 @@ header {
   background-color: white;
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 2000px;
   width: 100%;
   gap: 60px;
   align-items: stretch;
@@ -498,25 +497,59 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20px;
+  padding: 80px;
 
   & h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 5rem;
+    color: black;
+
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
   }
 }
 
 .style-info-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.05em;
+
+  color: black;
+  line-height: 2;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
 }
 
 .style-list {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 80px;
   margin-bottom: 40px;
+}
+
+.style-list li {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 0.05em;
+
+  color: black;
+  line-height: 2;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .info-book-button {
   display: inline-block;
-  align-self: flex-start;
+  align-self: center;
   padding: 14px 40px;
+  border: 1px solid #cb8254;
+  color: #cb8254;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .style-info-img {
