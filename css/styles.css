@@ -347,6 +347,28 @@ header {
 .kontakt-box-content {
   flex: 1.3;
   text-align: left;
+
+  & h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.3rem;
+    color: black;
+    margin: 0 0 5px 0;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  & p {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.05em;
+
+    color: black;
+    line-height: 2;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .kontakt-box-img {
@@ -359,6 +381,13 @@ header {
   height: auto;
   display: block;
 }
+
+.button-kontakt {
+  display: inline-block;
+  padding: 12px 35px;
+
+  color: white;
+  background-color: #cb8254;
   text-decoration: none;
   font-size: 0.9rem;
 
