@@ -406,6 +406,25 @@ header {
   font-style: normal;
 }
 
+/* om mig sida - presentation */
+.presentation-section {
+  background-color: #f7f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+}
+
 /* footer */
 footer {
   background-color: #d4cfc4;
