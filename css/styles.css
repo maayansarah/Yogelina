@@ -328,7 +328,7 @@ header {
   border: 1px solid #cb8254;
   color: #cb8254;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -399,7 +399,7 @@ header {
   color: white;
   background-color: #cb8254;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
 
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -548,7 +548,7 @@ header {
   color: #cb8254;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -678,6 +678,25 @@ header {
   align-items: center;
   max-width: 1800px;
   width: 100%;
+
+  & h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    color: black;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+  }
+}
+
+.form-intro {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 40px;
+}
+
 .input-group {
   margin-bottom: 25px;
   width: 100%;
@@ -725,8 +744,6 @@ header {
 .form-content {
   background-color: white;
   padding: 60px 50px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-
   grid-column: 1 / 7;
   grid-row: 1;
   z-index: 2;
@@ -744,6 +761,19 @@ header {
   display: block;
   object-fit: cover;
   border-top-left-radius: 150px;
+}
+
+.button-submit {
+  display: inline-block;
+  padding: 12px 45px;
+  border: 1px solid #cb8254;
+  background-color: transparent;
+  color: #cb8254;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 /* footer */
