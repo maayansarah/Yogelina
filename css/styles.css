@@ -668,7 +668,7 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 60px 0 0 0;
+  padding: 60px 0 0 60px;
   box-sizing: border-box;
 }
 
@@ -678,6 +678,48 @@ header {
   align-items: center;
   max-width: 1800px;
   width: 100%;
+.input-group {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 14px 15px;
+  background-color: #e5e5e5;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-group select {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.input-group textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  background-color: #e5e5e5;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: none;
 }
 
 .form-content {
