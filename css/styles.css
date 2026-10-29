@@ -312,7 +312,7 @@ header {
 
 .text-description {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -369,7 +369,7 @@ header {
 
   & p {
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     letter-spacing: 0.05em;
 
@@ -449,7 +449,7 @@ header {
 
 .presentation-small {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -512,7 +512,7 @@ header {
 
 .style-info-text {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -530,7 +530,7 @@ header {
 
 .style-list li {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   letter-spacing: 0.05em;
 
@@ -624,7 +624,7 @@ header {
 
 .contact-link {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-size: 1.8rem;
   margin: 0 0 5px 0;
@@ -656,7 +656,7 @@ header {
 
 .contact-phone {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
   font-size: 1.8rem;
   margin: 0 0 5px 0;
@@ -672,7 +672,7 @@ header {
 
 .contact-youtube {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic;
   font-size: 1.5rem;
   margin: 0 0 5px 0;
@@ -719,7 +719,7 @@ header {
 
 .form-intro {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.8;
   color: black;
@@ -736,7 +736,7 @@ header {
 
 .input-group label {
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1rem;
   color: black;
   margin-bottom: 10px;
