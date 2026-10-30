@@ -198,7 +198,6 @@ header {
 /* första sidans header */
 .transparent-header {
   position: absolute;
-
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -224,6 +223,7 @@ header {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background-position: center;
 
   & div {
     display: flex;
@@ -838,3 +838,105 @@ footer {
 .hem-footer {
   background-color: #f7f1f1;
 }
+
+@media (width >= 768px) {
+  header {
+    & .menu-button {
+      display: none;
+    }
+  }
+}
+
+/* mobil */
+/* header */
+@media (width < 768px) {
+  header {
+    width: initial;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0em;
+  }
+
+  & .menu-button {
+    width: 30px;
+    display: inline;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0rem;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    margin: 1rem;
+
+    z-index: 2;
+  }
+
+  & nav {
+    background-color: #d4cfc4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+
+    &.open {
+      display: initial;
+      z-index: 1;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0em;
+      padding: 8.1rem 0;
+    }
+
+    & li {
+      border: 0;
+      padding: 3rem 0;
+    }
+  }
+
+  .transparent-header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0;
+  }
+
+  .hero-section {
+    background-image: url("../images/DSC07626-5.jpg");
+    min-height: 70vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-position: right;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 0em;
+      gap: 40vh;
+    }
+
+    & h1 {
+      font-size: 4em;
+    }
+
+    & p {
+      font-size: 1.2em;
+      color: white;
+      padding: 0 2rem;
+    }
+  }
+  }
+  }
