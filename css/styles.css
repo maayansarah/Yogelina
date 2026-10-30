@@ -1006,4 +1006,59 @@ footer {
     text-align: center;
     padding: 1rem 0;
   }
+
+  /* om mig sidan - presentation */
+
+  .presentation-section {
+    padding: 0 40px;
+  }
+  .presentation-container {
+    flex-direction: column;
+  }
+
+  .presentation-content {
+    & h1 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .presentation-big {
+    font-size: 3.6rem;
+  }
+
+  .presentation-small {
+    line-height: 1.8;
+    font-size: 1.3rem;
+  }
+
+  .portrait-img img {
+    border-radius: 50px;
+  }
+
+  /* stilsektionen */
+  .style-info-container {
+    flex-direction: column;
+    max-width: 2000px;
+    width: 100%;
+    gap: 60px;
+  }
+
+  .style-info-content {
+    padding: 40px;
+
+    & h2 {
+      font-size: 3.6rem;
+    }
+  }
+  .style-list {
+    padding-left: 40px;
+  }
+
+  .style-info-text {
+    font-size: 1.3rem;
+  }
+  .style-list li {
+    font-size: 1.3rem;
+  }
   }
