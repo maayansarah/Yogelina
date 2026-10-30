@@ -714,6 +714,29 @@ header {
     font-weight: 400;
     margin: 0 0 50px 0;
   }
+
+  #errorList {
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  #errorList li {
+    background-color: #fdf2f2;
+    color: #ea4242;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-left: 2px solid #ea5151;
+    border-style: dashed;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #errorList li.success-message {
+    background-color: #f3fdf2;
+    color: #2da157;
+    border-left-color: #5ea478;
+  }
 }
 
 .form-intro {
