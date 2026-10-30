@@ -936,7 +936,74 @@ footer {
       font-size: 1.2em;
       color: white;
       padding: 0 2rem;
+      line-height: 1.8;
     }
   }
+
+  /* läs mer om mig sektionen på första sidan */
+  .om-intro-section {
+    padding: 100px 20px;
+    min-height: auto;
+    background-color: #d4cfc4;
+
+    & h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .om-intro-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+
+  .sub-title {
+    font-size: 2.5rem;
+  }
+
+  .box-content {
+    background-color: white;
+    padding: 30px 50px;
+    text-align: center;
+
+    grid-column: 1 / 8;
+    grid-row: 1;
+
+    z-index: 2;
+  }
+
+  .text-description {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .om-box-img img {
+    display: none;
+  }
+
+  /* kontakta mig sektionen på första sidan */
+  .kontakt-intro-section {
+    padding: 0 40px;
+  }
+  .kontakt-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kontakt-box-content {
+    & h2 {
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+  .button-kontakt {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
   }
   }
