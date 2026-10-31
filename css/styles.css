@@ -141,6 +141,23 @@ html {
 img {
   max-width: 100%;
 }
+/* dark mode */
+body {
+  --primary-bg-color: #f7f1f1;
+  --secondary-bg-color: #d4cfc4;
+  --info-bg-color: white;
+  --primary-text-color: black;
+  color: var(--primary-text-color);
+}
+
+body.dark-mode {
+  --secondary-bg-color: #302f24;
+  --primary-bg-color: #252620;
+  --info-bg-color: #727264;
+  --primary-text-color: white;
+  color: var(--primary-text-color);
+}
+
 body.dark-mode .icon-sun {
   display: inline-block;
 }
@@ -200,7 +217,7 @@ header {
     /* ta bort lila färg från klick */
     a:link,
     a:visited {
-      color: #000000;
+      color: var(--primary-text-color);
     }
   }
 
@@ -244,7 +261,7 @@ header {
 }
 
 .header-color {
-  background-color: #d4cfc4;
+  background-color: var(--secondary-bg-color);
 }
 
 /* understäck på menyval */
@@ -297,12 +314,12 @@ header {
   min-height: 100vh;
   padding: 80px;
   box-sizing: border-box;
-  background-color: #d4cfc4;
+  background-color: var(--secondary-bg-color);
 
   & h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 3.3rem;
-    color: black;
+
     margin: 0 0 5px 0;
     font-weight: 400;
   }
@@ -317,7 +334,7 @@ header {
 }
 
 .box-content {
-  background-color: white;
+  background-color: var(--info-bg-color);
   padding: 60px 100px;
   text-align: center;
 
@@ -343,7 +360,7 @@ header {
 .sub-title {
   font-family: "Cormorant Garamond", serif;
   font-size: 3.3rem;
-  color: black;
+
   font-weight: 400;
   font-style: italic;
   margin: 0 0 30px 0;
@@ -355,7 +372,6 @@ header {
   font-style: normal;
   letter-spacing: 0.05em;
 
-  color: black;
   line-height: 1.8;
   font-size: 1.7rem;
   margin-bottom: 40px;
@@ -376,7 +392,7 @@ header {
 
 /* kontakta mig sektionen på första sidan */
 .kontakt-intro-section {
-  background-color: #f7f1f1;
+  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,7 +416,7 @@ header {
   & h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 3.3rem;
-    color: black;
+
     margin: 0 0 5px 0;
     font-weight: 400;
     margin-bottom: 15px;
@@ -412,7 +428,6 @@ header {
     font-style: normal;
     letter-spacing: 0.05em;
 
-    color: black;
     line-height: 2;
     font-size: 1.7rem;
     margin-bottom: 40px;
@@ -446,7 +461,7 @@ header {
 
 /* om mig sida - presentation */
 .presentation-section {
-  background-color: #f7f1f1;
+  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,7 +487,7 @@ header {
     font-style: italic;
     font-weight: 300;
     font-size: 1.8rem;
-    color: black;
+
     margin: 0 0 5px 0;
     margin-bottom: 40px;
   }
@@ -481,7 +496,7 @@ header {
 .presentation-big {
   font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
-  color: black;
+
   margin-bottom: 10px;
 }
 
@@ -491,7 +506,6 @@ header {
   font-style: normal;
   letter-spacing: 0.05em;
 
-  color: black;
   line-height: 2;
   font-size: 1.5rem;
 }
@@ -511,7 +525,7 @@ header {
 
 /* Om mig - stilar sektionen */
 .style-info-section {
-  background-color: #d4cfc4;
+  background-color: var(--secondary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,7 +535,7 @@ header {
 }
 
 .style-info-container {
-  background-color: white;
+  background-color: var(--info-bg-color);
   display: flex;
   flex-direction: row;
   max-width: 2000px;
@@ -540,7 +554,6 @@ header {
   & h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 5rem;
-    color: black;
 
     font-weight: 400;
     line-height: 1.2;
@@ -554,7 +567,6 @@ header {
   font-style: normal;
   letter-spacing: 0.05em;
 
-  color: black;
   line-height: 2;
   font-size: 1.5rem;
   margin-bottom: 40px;
@@ -572,7 +584,6 @@ header {
   font-style: normal;
   letter-spacing: 0.05em;
 
-  color: black;
   line-height: 2;
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -603,7 +614,7 @@ header {
 
 /* kontaktsida */
 .contact-info-section {
-  background-color: #f7f1f1;
+  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,7 +623,7 @@ header {
 }
 
 .contact-info-container {
-  background-color: white;
+  background-color: var(--info-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -624,7 +635,6 @@ header {
   & h1 {
     font-family: "Cormorant Garamond", serif;
     font-size: 3.3rem;
-    color: black;
 
     font-weight: 400;
     line-height: 1.2;
@@ -670,11 +680,11 @@ header {
   line-height: 2;
   display: block;
 
-  color: #000000;
+  color: var(--primary-text-color);
 
-  a:link,
-  a:visited {
-    color: #000000;
+  &:link,
+  &:visited {
+    color: var(--primary-text-color);
   }
 }
 
@@ -701,10 +711,9 @@ header {
   line-height: 2;
   text-decoration: none;
 
-  color: #000000;
-  a:link,
-  a:visited {
-    color: #000000;
+  &:link,
+  &:visited {
+    color: var(--primary-text-color);
   }
 }
 
@@ -730,7 +739,7 @@ header {
 
 /* formulär sektionen */
 .form-section {
-  background-color: #f7f1f1;
+  background-color: var(--primary-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,7 +758,7 @@ header {
   & h2 {
     font-family: "Cormorant Garamond", serif;
     font-size: 4rem;
-    color: black;
+
     font-weight: 400;
     margin: 0 0 50px 0;
   }
@@ -783,7 +792,7 @@ header {
   font-weight: 300;
   font-size: 1.3rem;
   line-height: 1.8;
-  color: black;
+
   margin-bottom: 40px;
 }
 
@@ -799,7 +808,7 @@ header {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  color: black;
+
   margin-bottom: 10px;
 }
 
@@ -832,7 +841,7 @@ header {
 }
 
 .form-content {
-  background-color: white;
+  background-color: var(--info-bg-color);
   padding: 60px 50px;
   grid-column: 1 / 7;
   grid-row: 1;
@@ -868,7 +877,7 @@ header {
 
 /* footer */
 footer {
-  background-color: #d4cfc4;
+  background-color: var(--secondary-bg-color);
   padding: 50px 0;
   display: flex;
   flex-direction: column;
@@ -897,7 +906,7 @@ footer {
 }
 
 .hem-footer {
-  background-color: #f7f1f1;
+  background-color: var(--primary-bg-color);
 }
 
 @media (width >= 768px) {
@@ -940,7 +949,7 @@ footer {
     border-radius: 0;
     margin: 1.5rem;
     z-index: 2;
-    order: 2;
+    order: 3;
   }
 
   .hero-section .menu-button,
@@ -953,7 +962,7 @@ footer {
   }
 
   & nav {
-    background-color: #d4cfc4;
+    background-color: var(--secondary-bg-color);
     position: absolute;
     top: 0;
     width: 100%;
@@ -1018,7 +1027,6 @@ footer {
 
     & p {
       font-size: 1.2em;
-      color: white;
       padding: 0 2rem;
       line-height: 1.8;
     }
@@ -1028,7 +1036,7 @@ footer {
   .om-intro-section {
     padding: 100px 20px;
     min-height: auto;
-    background-color: #d4cfc4;
+    background-color: var(--secondary-bg-color);
 
     & h2 {
       font-size: 2.5rem;
@@ -1046,7 +1054,7 @@ footer {
   }
 
   .box-content {
-    background-color: white;
+    background-color: var(--info-bg-color);
     padding: 30px 50px;
     text-align: center;
 
